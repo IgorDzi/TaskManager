@@ -2,6 +2,7 @@ package data;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Objects;
 
 /**
  * The type data.Task.
@@ -101,6 +102,18 @@ public class Task {
 
     private Priority priority;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Task task)) return false;
+        return taskId == task.taskId  && Objects.equals(title, task.title) && Objects.equals(description, task.description) && Objects.equals(dueDate, task.dueDate) && priority == task.priority;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(taskId, title, description, dueDate, completed, priority);
+    }
+
     /**
      * Instantiates a new data.Task.
      *
@@ -155,6 +168,17 @@ public class Task {
     public int daysUntilDue(){
         LocalDate currentTime = LocalDate.now();
         return (int) ChronoUnit.DAYS.between(currentTime,dueDate);
+    }
+    @Override
+    public String toString() {
+        return "Task{" +
+                "taskId=" + getTaskId() +
+                ", title='" + getTitle() + '\'' +
+                ", description='" + getDescription() + '\'' +
+                ", dueDate=" + getDueDate() +
+                ", completed=" + isCompleted() +
+                ", priority=" + getPriority() +
+                '}';
     }
 
 

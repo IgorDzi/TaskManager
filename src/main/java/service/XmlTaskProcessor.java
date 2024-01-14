@@ -6,15 +6,11 @@ import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
-import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import data.Task;
 
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 public class XmlTaskProcessor  implements TaskProcessor{
@@ -40,7 +36,7 @@ public class XmlTaskProcessor  implements TaskProcessor{
     public void saveTasks(List<Task> tasks, String filePath) {
         XmlMapper objectMapper = new XmlMapper();
         SimpleModule module = new SimpleModule();
-        module.addSerializer(LocalDate.class, new JsonSerializer<LocalDate>() {
+        module.addSerializer(LocalDate.class, new JsonSerializer<>() {
             @Override
             public void serialize(LocalDate date, JsonGenerator g, SerializerProvider provider) throws IOException {
                 g.writeString(date.toString());

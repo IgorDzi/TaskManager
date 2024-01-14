@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f6589b3-b2fa-44a2-8cd9-c515e066361f" name="Changes" comment="Added showcasing catch InvalidStatusException">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/exampletasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/exampletasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/exampletasks_save.json" beforeDir="false" />
-    </list>
-    <list id="1d46731c-79c7-4dc2-91db-17feff151b2f" name="Changes by Szymon" comment="">
+    <list default="true" id="2f6589b3-b2fa-44a2-8cd9-c515e066361f" name="Changes" comment="Fixed XML Importing">
       <change beforePath="$PROJECT_DIR$/src/main/java/service/XmlTaskProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/XmlTaskProcessor.java" afterDir="false" />
     </list>
+    <list id="1d46731c-79c7-4dc2-91db-17feff151b2f" name="Changes by Szymon" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,7 +43,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "JUnit.DailyTaskTest.executor": "Run",
     "JUnit.ProjectTaskTest.executor": "Run",
     "JUnit.TaskTest.executor": "Run",
@@ -168,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705168272936</updated>
       <workItem from="1705168274004" duration="17904000" />
-      <workItem from="1705246038255" duration="5720000" />
+      <workItem from="1705246038255" duration="6138000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit&#10;&#10;Added Task datatype and DailTask,ProjectTask extending it.">
       <option name="closed" value="true" />
@@ -258,11 +254,30 @@
       <option name="project" value="LOCAL" />
       <updated>1705248674967</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed XML Importing">
+      <option name="closed" value="true" />
+      <created>1705252052267</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705252052267</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit&#10;&#10;Added Task datatype and DailTask,ProjectTask extending it." />
@@ -274,24 +289,25 @@
     <MESSAGE value="Added unit tests for Task class" />
     <MESSAGE value="Added unit tests for DailyTask and ProjectTask" />
     <MESSAGE value="Added showcasing catch InvalidStatusException" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added showcasing catch InvalidStatusException" />
+    <MESSAGE value="Fixed XML Importing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed XML Importing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/service/XmlTaskProcessor.java</url>
-          <line>30</line>
+          <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/service/XmlTaskProcessor.java</url>
-          <line>45</line>
+          <line>41</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/service/XmlTaskProcessor.java</url>
-          <line>40</line>
+          <line>36</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -301,7 +317,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/service/XmlTaskProcessor.java</url>
-          <line>53</line>
+          <line>49</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

@@ -1,0 +1,62 @@
+<ArrayList>
+  <item>
+    <taskId>1</taskId>
+    <title>Morning Routine</title>
+    <description>Complete morning tasks</description>
+    <dueDate>2024</dueDate>
+    <dueDate>1</dueDate>
+    <dueDate>15</dueDate>
+    <completed>false</completed>
+    <priority>HIGH</priority>
+  </item>
+  <item>
+    <taskId>2</taskId>
+    <title>Exercise</title>
+    <description>Complete daily workout</description>
+    <dueDate>2024</dueDate>
+    <dueDate>1</dueDate>
+    <dueDate>16</dueDate>
+    <completed>false</completed>
+    <priority>MEDIUM</priority>
+  </item>
+  <item>
+    <taskId>3</taskId>
+    <title>Reading</title>
+    <description>Read a chapter from a book</description>
+    <dueDate>2024</dueDate>
+    <dueDate>1</dueDate>
+    <dueDate>17</dueDate>
+    <completed>false</completed>
+    <priority>LOW</priority>
+  </item>
+  <item>
+    <taskId>4</taskId>
+    <title>Project Kickoff</title>
+    <description>Initiate project tasks</description>
+    <dueDate>2024</dueDate>
+    <dueDate>2</dueDate>
+    <dueDate>1</dueDate>
+    <completed>false</completed>
+    <priority>HIGH</priority>
+  </item>
+  <item>
+    <taskId>5</taskId>
+    <title>Task Planning</title>
+    <description>Plan tasks for the project</description>
+    <dueDate>2024</dueDate>
+    <dueDate>2</dueDate>
+    <dueDate>5</dueDate>
+    <completed>false</completed>
+    <priority>MEDIUM</priority>
+  </item>
+  <item>
+    <taskId>6</taskId>
+    <title>Client Meeting</title>
+    <description>Schedule and attend client meeting</description>
+    <dueDate>2024</dueDate>
+    <dueDate>2</dueDate>
+    <dueDate>10</dueDate>
+    <completed>false</completed>
+    <priority>HIGH</priority>
+  </item>
+</ArrayList>

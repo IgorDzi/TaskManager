@@ -173,15 +173,6 @@ public class Task {
     }
 
     /**
-     * Change due date.
-     *
-     * @param newDueDate the new due date
-     */
-    public void changeDueDate(LocalDate newDueDate) {
-        setDueDate(newDueDate);
-    }
-
-    /**
      * Is late boolean.
      *
      * @return the boolean

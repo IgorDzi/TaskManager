@@ -27,6 +27,7 @@ public class Main {
 
         // Perform task completion
         taskManager.getTaskById(1).completeTask();
+        taskManager.getTaskById(2).completeTask();
 
         // Display tasks after completing task
         System.out.println("\nTasks after adding New Task:");
@@ -59,7 +60,6 @@ public class Main {
             System.out.println("\nProjectTask after Priority Check:");
             System.out.println(projectTaskInstance);
         }
-
 
         // Add a new task
         Task newTask = new Task(4, "New Task", "Complete new task", LocalDate.now().plusDays(2), Priority.HIGH);
@@ -100,10 +100,10 @@ public class Main {
 
         // Save tasks to JSON file
         TaskProcessor jsonTaskProcessor = new JsonTaskProcessor();
-        jsonTaskProcessor.saveTasks(taskManager.getTasks(), "tasks.json");
+        jsonTaskProcessor.saveTasks(taskManager.getTasks(), "src/main/java/ui/tasks.json");
 
         // Import tasks from JSON file
-        List<Task> importedTasksJson = jsonTaskProcessor.importTasks("tasks.json");
+        List<Task> importedTasksJson = jsonTaskProcessor.importTasks("src/main/java/ui/tasks.json");
 
         // Display imported tasks from JSON
         System.out.println("\nImported Tasks from JSON:");
@@ -111,10 +111,10 @@ public class Main {
 
         // Save tasks to XML file
         TaskProcessor xmlTaskProcessor = new XmlTaskProcessor();
-        xmlTaskProcessor.saveTasks(taskManager.getTasks(), "tasks.xml");
+        xmlTaskProcessor.saveTasks(taskManager.getTasks(), "src/main/java/ui/tasks.xml");
 
         // Import tasks from XML file
-        List<Task> importedTasksXml = xmlTaskProcessor.importTasks("tasks.xml");
+        List<Task> importedTasksXml = xmlTaskProcessor.importTasks("src/main/java/ui/tasks.xml");
 
         // Display imported tasks from XML
         System.out.println("\nImported Tasks from XML:");

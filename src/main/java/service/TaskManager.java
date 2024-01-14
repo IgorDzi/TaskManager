@@ -3,6 +3,7 @@ package service;
 import data.Priority;
 import data.Task;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -29,7 +30,7 @@ public class TaskManager {
      * @param tasks the tasks
      */
     public TaskManager(List<Task> tasks) {
-        this.tasks = tasks;
+        this.tasks = new ArrayList<>(tasks);
     }
 
     /**

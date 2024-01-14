@@ -1,0 +1,26 @@
+<ArrayList>
+  <item>
+    <taskId>1</taskId>
+    <title>Morning Routine</title>
+    <description>Complete morning tasks</description>
+    <dueDate>2024-01-14</dueDate>
+    <completed>false</completed>
+    <priority>HIGH</priority>
+  </item>
+  <item>
+    <taskId>2</taskId>
+    <title>Project Task</title>
+    <description>Complete project task</description>
+    <dueDate>2024-01-19</dueDate>
+    <completed>true</completed>
+    <priority>MEDIUM</priority>
+  </item>
+  <item>
+    <taskId>4</taskId>
+    <title>New Task</title>
+    <description>Complete new task</description>
+    <dueDate>2024-01-16</dueDate>
+    <completed>false</completed>
+    <priority>HIGH</priority>
+  </item>
+</ArrayList>

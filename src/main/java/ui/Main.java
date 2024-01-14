@@ -1,9 +1,6 @@
 package ui;
 
-import data.DailyTask;
-import data.Priority;
-import data.ProjectTask;
-import data.Task;
+import data.*;
 import service.JsonTaskProcessor;
 import service.TaskProcessor;
 import service.XmlTaskProcessor;
@@ -34,6 +31,14 @@ public class Main {
         // Display tasks after completing task
         System.out.println("\nTasks after adding New Task:");
         taskManager.getTasks().forEach(System.out::println);
+
+        // Try to perform task completion on completed task
+        try {
+            taskManager.getTaskById(1).completeTask();
+        } catch (InvalidStatusException e){
+            System.out.println("\nException caught: " + e.getMessage());
+        }
+
 
         // Reset DailyTask
         Task dailyTask = taskManager.getTaskById(1);

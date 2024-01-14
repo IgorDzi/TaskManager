@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f6589b3-b2fa-44a2-8cd9-c515e066361f" name="Changes" comment="Added unit tests for Task class">
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/DailyTaskTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/ProjectTaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2f6589b3-b2fa-44a2-8cd9-c515e066361f" name="Changes" comment="Added unit tests for DailyTask and ProjectTask">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Main.java" afterDir="false" />
     </list>
     <list id="1d46731c-79c7-4dc2-91db-17feff151b2f" name="Changes by Szymon" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +41,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.DailyTaskTest.executor": "Run",
+    "JUnit.ProjectTaskTest.executor": "Run",
     "JUnit.TaskTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -161,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705168272936</updated>
       <workItem from="1705168274004" duration="17904000" />
-      <workItem from="1705246038255" duration="2188000" />
+      <workItem from="1705246038255" duration="2511000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit&#10;&#10;Added Task datatype and DailTask,ProjectTask extending it.">
       <option name="closed" value="true" />
@@ -235,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705247917146</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added unit tests for DailyTask and ProjectTask">
+      <option name="closed" value="true" />
+      <created>1705248429097</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705248429097</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +257,7 @@
     <MESSAGE value="Showcasing functionality" />
     <MESSAGE value="Minor adjustments" />
     <MESSAGE value="Added unit tests for Task class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests for Task class" />
+    <MESSAGE value="Added unit tests for DailyTask and ProjectTask" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unit tests for DailyTask and ProjectTask" />
   </component>
 </project>
